@@ -10,26 +10,26 @@ window.onload = function() {
       //create new div
       var newDiv = document.createElement("div");
 
-      //give it some content
-      var title = document.createTextNode(data.results[i].title);
-      newDiv.appendChild(title);
-      console.log(title);
+          //give it some content
+          var title = document.createTextNode(data.results[i].title);
+          newDiv.appendChild(title);
+          console.log(title);
 
-      var href = document.createTextNode(data.results[i].href);
-      newDiv.appendChild(href);
-      console.log(href);
+          var href = document.createTextNode(data.results[i].href);
+          newDiv.appendChild(href);
+          console.log(href);
 
-      var ingredients = document.createTextNode(data.results[i].ingredients);
-      newDiv.appendChild(ingredients);
-      console.log(ingredients);
+          var ingredients = document.createTextNode(data.results[i].ingredients);
+          newDiv.appendChild(ingredients);
+          console.log(ingredients);
 
-      var thumbnail = document.createTextNode(data.results[i].thumbnail);
-      newDiv.appendChild(thumbnail);
-      console.log(thumbnail);
+          var thumbnail = document.createTextNode(data.results[i].thumbnail);
+          newDiv.appendChild(thumbnail);
+          console.log(thumbnail);
 
       //add new div and its content into the DOM
       var currentDiv = document.getElementById("div1");
-      document.body.insertBefore(newDiv, currentDiv);
+      currentDiv.parentNode.insertBefore(newDiv, currentDiv);
     }
 
   addElement(data);
