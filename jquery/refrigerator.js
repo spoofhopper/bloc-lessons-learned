@@ -5,12 +5,12 @@ window.onload = function() {
 
 $('.oranges').click(function(event) {
   alert("You chose an orange!");
-  .css('border', '5px solid orange');
+  $(this).css('border', '5px solid orange')
 });
 
 $('.apples').click(function(event) {
-  alert("You chose an apple!");
-  .css('border', '5px solid red');
+  alert("You chose an apple!")
+  $(this).css('border', '5px solid red')
 });
 
 
